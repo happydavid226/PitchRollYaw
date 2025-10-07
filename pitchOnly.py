@@ -7,7 +7,7 @@ from matplotlib.patches import Rectangle
 from collections import deque
 
 # ----- CONFIG -----
-PORT = '/dev/cu.usbmodem1101'  # <- change if needed
+PORT = 'COM7'  # <- change if needed
 BAUD = 115200
 WINDOW = 200                   # number of samples shown
 
@@ -91,3 +91,4 @@ def update(frame):
 ani = animation.FuncAnimation(fig, update, init_func=init, interval=30, blit=True)
 plt.tight_layout()
 plt.show()
+
